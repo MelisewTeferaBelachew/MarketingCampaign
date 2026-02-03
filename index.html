@@ -1,0 +1,283 @@
+<!DOCTYPE HTML>
+<!--
+	Massively by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Melisew's Portfolio</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper" class="fade-in">
+
+				<!-- Intro -->
+					<div id="intro">
+						<h1>Melisew T. Belachew (PhD)<br/>
+						</p></h1>
+						<p>Freelance Data Analyst/Scientist and Associate Professor of Mathematics (<a href="https://www.haramaya.edu.et" target="_blank">@Haramaya University) </a> <a></a><br />
+						<a ></a></p>
+						<ul class="actions">
+							<li><a href="#header" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
+						</ul>
+					</div>
+
+				<!-- Header -->
+					<header id="header">
+						<a href="index.html" class="logo">Melisew</a>
+					</header>
+
+				<!-- Nav -->
+					<nav id="nav">
+						<ul class="links">
+							<li class="active"><a href="index.html">Project One</a></li>
+							
+							
+						</ul>
+						<ul class="icons">
+							<li><a href="https://www.linkedin.com/in/melisew-tefera-belachew-27b297118/" target="_blank" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+							<li><a href="https://github.com/MelisewTeferaBelachew" target="_blank" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+							<li><a href="https://orcid.org/0000-0002-8041-8495" target="_blank" class="icon brands fa-orcid"><span class="label">ORCiD</span></a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Featured Post -->
+							<article class="post featured">
+								<header class="major">
+									
+									<h2><a href="#"><br />
+									Analyzing Grocery Store Data using ML</a></h2>
+									<p>In this project we will analyze the marketing campaign data of a grocery store for 
+									the sake of extracting useful information that will help increase the store's profitability. 
+									In general, marketing campaign data can reveal very actionable insights if we look 
+									at the right things. We will be employing a road map for practically 
+									analyzing the said data in Python using ML.</p>
+								</header>
+								<a href="#" class="image main"><img src="images/grocery_items_1.jpg" alt="" /></a>
+
+							</article>
+
+						<!-- Posts -->
+							<section class="posts">
+								<article>
+									<header>
+										<span class="date"></span>
+										<h2><a href="#">Data Preparation</a></h2>
+									</header>
+									<a href="#" class="image fit"><img src="images/original_data_info.png" alt="" /></a>
+									<p> A well-known marketing campain data of a grocery store, namely marketing_campaign.csv, obtained 
+										from #Github was loaded and inspected using the appropriate python modules 
+										and techniques. Further inspection and structure investigation were also done. The crucial data cleaning was 
+										also performed to remove null and/or NaN entries. </p>
+									
+								</article>
+								<article>
+									<header>
+										<span class="date"></span>
+										<h2><a href="#">Feature Engineering<br />
+										</a></h2>
+									</header>
+									<a href="#" class="image fit"><img src="images/relative_boxplot.png" alt="" /></a>
+									<p>Investigation of the categorical data was done and also some feature engineering like combining columns, 
+										creating new ones, renaming some columns and deleting repeated ones were also done. This is to prepare 
+										the data for ML techniques. Moreover, outliers were found and removed by setting a cap on the 
+										appropriate features. Additional feature engineering like encoding (using LableEncoder()) 
+										and scaling (using StandardScaler()) were done. </p>
+									
+								</article>
+								<article>
+									<header>
+										<span class="date"></span>
+										<h2><a href="#">Customer Segmentation<br />
+									</a></h2>
+									</header>
+									<a href="#" class="image fit"><img src="images/revenue_top_customers.png" alt="" /></a>
+									<p> Since all customers are not equally profitable, we need to identify those who spend high
+										in addition to those who visit the store frequently. After feature engineering, we were 
+										able to know the spending ability of the customers and identify high-spenders. 
+									By computing mean, median and max of the spendings, we were also able to realize the existence of strong spending imbalance.
+									It is worth mentioning that the top 30% help generate 70% of the total revenue. They are 665 (out of 2212) 
+									in number and we recommend to design personalized campaigns for them. Moreover, the frequencies of the customers 
+									were calculated which helped as identify the regular visitors of the store. It is recommended to invest marketing 
+									budget on high-sepnders and frequent visitors.</p>
+									
+								</article>
+								<article>
+									<header>
+										<span class="date"></span>
+										<h2><a href="#">Product Category Profitability<br />
+										</a></h2>
+									</header>
+									<a href="#" class="image fit"><img src="images/product_category_pie.png" alt="" /><img src="images/family_product_category2.png" alt="" /></a>
+									<p>Wine and Meat are the core profit engines. Wine being the dominant revenue driver. These two are responsible for 50% and 
+										28% of the total revenue, respectively. Therefore, it is recommended to feature wine and meat bundles in the 
+										marketing strategy. The analysis in this section tells us to promote wine and premium products for small families 
+										while bulk meat and food bundles for large families. Moreover, smaller families tend to have higher per-household 
+										spending whereas larger families spend more on necessities, less on premium items. These imply that it also helps 
+										to design family-size specific promotion strategies. </p>
+									
+								</article>
+								<article>
+									<header>
+										<span class="date"></span>
+										<h2><a href="#">Campaign Performance<br />
+										</a></h2>
+									</header>
+									<a href="#" class="image fit"><img src="images/promotions_count.png" alt="" /></a>
+									<p>Here we analyze how much the conducted campaign was effective. It is observed that some campaigns perform better 
+										than others but most customers don't accept any campaign (1754 out of 2212) implying the existence of a campaign 
+										fatigue. Therefore, it is wise to focus on customers who accepted at least one past campaign (only 136 out of 2212) 
+										and stop sending campaigns to chronic non-responders. </p>
+									
+								</article>
+								<article>
+									<header>
+										<span class="date"></span>
+										<h2><a href="#">RFM Analysis<br />
+										</a></h2>
+									</header>
+									<a href="#" class="image fit"><img src="images/rfm_score.png" alt="" /></a>
+									<p>The RFM analysis helped us to categorize the customers as Champions or profit gold (with RFM 11-12), 
+										Loyal (RFM 9-10), At-risk (RFM 6-8) and Lost (RFM 5 or less). Therefore, by mapping the customers with their 
+										RFM scores, we might design VIP programs for customers with RFM 9 and higher, win-back campaign for those with 
+										RFM 6-8 and stop expensive marketing for RFM 5 and less. </p>
+									
+								</article>
+								<article>
+									<header>
+										<span class="date"></span>
+										<h2><a href="#">Dimensionality Reduction (PCA based Analysis)<br />
+										</a></h2>
+									</header>
+									<a href="#" class="image fit"><img src="images/optimal_clusters.png" alt="" /><img src="images/clusters_profile_income.png" alt="" /></a>
+									<p>First off, the correlation matrix heatmap was plotted for the sake of identifying highly correlated features. 
+										Thereafter, we used PCA in collaboration with Agglomerative Clustering and the 
+										Elbow method to calculate the optimal number of clusters, which we found to be 4. It is observed that the clusters were more 
+										or less balanced without any additional manipulation. Among the clusters, the most important ones that help 
+										the store to generate more profit were found to be Cluster 0 (those with middle income but spend high) 
+										and Cluster 2 (those having moderate income but are high spenders). Assuring that it is 
+										spending that matters in the store's profit, not just income! </p>
+									
+								</article>
+								<article>
+									<header>
+										<span class="date"></span>
+										<h2><a href="#">Prediction Modeling and Feature Importances<br />
+										</a></h2>
+									</header>
+									<a href="#" class="image fit"><img src="images/feature_importance.png" alt="" /></a>
+									<p>Using RandomForestClassifier, we were able to identify the top three important features which are 
+										Spent (Total Spending), Recency and Income telling us that customers which purchase frequently and engage 
+										with the store on a regular basis (and spend more) are the ones that help generate more profit. </p>
+									
+								</article>
+								<article>
+									<header>
+										<span class="date"></span>
+										<h2><a href="#">Business Insight <br />
+										</a></h2>
+									</header>
+									<a href="#" class="image fit"><img src="images/profit_pic.jpg" alt="" /></a>
+									<p>To ensure store profitability, it is highly recommended to:<br />
+									1. Focus on top spenders as they help generate 70% of the total revenue.<br />
+								    2. Promote Wine and Meat aggressively.<br />
+							        3. Design loyalty, personalized offers and/or VIP programs for customers with RFM >= 9 to retain them at all cost.<br />
+									4. Work on win-back campaigns for those with RFM 6-8 and stop expensive marketing on customers with RFM 5 and less. <br />
+						            5. Allocate more campaiging budget for customers in Cluster 0 (those with middle income but spend high)
+									 and Cluster 2 (those having moderate income but are high spenders). <br />
+								    6. Design promotion strategies that take into account the most important features (Spending, Recency and Income). <br />
+									7. Avoid campaigning to non-responders. <br />
+									8. Don't treat customers equally.
+
+								</p>
+									
+								</article>
+							</section>
+
+			
+						<!-- Footer -->
+							<footer>
+								<div class="pagination">
+									<!--<a href="#" class="previous">Prev</a>-->
+									<a href="#" class="page active">1</a>
+					
+								</div>
+							</footer>
+
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<section>
+							<form method="post" action="#">
+								<div class="fields">
+									<div class="field">
+										<label for="name">Name</label>
+										<input type="text" name="name" id="name" />
+									</div>
+									<div class="field">
+										<label for="email">Email</label>
+										<input type="text" name="email" id="email" />
+									</div>
+									<div class="field">
+										<label for="message">Message</label>
+										<textarea name="message" id="message" rows="3"></textarea>
+									</div>
+								</div>
+								<ul class="actions">
+									<li><input type="submit" value="Send Message" /></li>
+								</ul>
+							</form>
+						</section>
+						<section class="split contact">
+							<section class="alt">
+								<h3>Address</h3>
+								<p>Haramaya University, 138<br />
+								Dire Dawa, Ethiopia</p>
+							</section>
+							<section>
+								<h3>Phone</h3>
+								<p><a href="#">(+251) 963-07 82 43</a></p>
+							</section>
+							<section>
+								<h3>Email</h3>
+								<p><a href="#">melisewt@gmail.com</a></p>
+							</section>
+							<section>
+								<h3>Social</h3>
+								<ul class="icons alt">
+									<li><a href="https://www.linkedin.com/in/melisew-tefera-belachew-27b297118/" target="_blank" class="icon brands alt fa-linkedin"><span class="label">LinkedIn</span></a></li>
+									<li><a href="https://github.com/MelisewTeferaBelachew" target="_blank" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+									<li><a href="https://orcid.org/0000-0002-8041-8495" target="_blank" class="icon brands fa-orcid"><span class="label">ORCiD</span></a></li>
+								</ul>
+							</section>
+						</section>
+					</footer>
+
+				<!-- Copyright -->
+					<div id="copyright">
+						<ul><li>&copy; Untitled</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
